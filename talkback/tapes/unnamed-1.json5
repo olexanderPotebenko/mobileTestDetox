@@ -1,0 +1,120 @@
+{
+    meta: {
+        createdAt: '2022-08-24T19:42:41.265Z',
+        host: 'https://loophq.com',
+        reqHumanReadable: true,
+        resHumanReadable: true,
+        resUncompressed: true,
+    },
+    req: {
+        headers: {
+            accept: 'application/json',
+            'content-type': 'application/json',
+            connection: 'Keep-Alive',
+            'accept-encoding': 'gzip',
+            cookie: '_loop_session=07b7b63195ebd724e0e8ad37364b7ad9; ahoy_visitor=afa3b79b-cfe7-47aa-b3be-b8e8eeb97cbc; ahoy_visit=0271c530-1bba-409e-9dd2-fea6ba5b5586',
+            'user-agent': 'okhttp/4.9.2',
+        },
+        url: '/api/v1/users',
+        method: 'POST',
+        body: {
+            provider: {
+                provider_name: 'google_oauth2',
+                token: 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjQwMmYzMDViNzA1ODEzMjlmZjI4OWI1YjNhNjcyODM4MDZlY2E4OTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2MTkwNTkxMTc1NjYtNXR1OGs3aWc5dWE5M3RobWx1MHVjMm5zaTQwa3F2ZTYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2MTkwNTkxMTc1NjYtZmtiN21iaTM5bjFmbWtqOTNvaG5vZXU4bjJ0dmhwZnUuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTE2NDIzODE1Mzg0NTk2OTQ0NDMiLCJlbWFpbCI6InNhbGx5dGVzdGVyNjE1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoic2FsbHkgdGVzdGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FJdGJ2bWw1RTFVVkhBdjZJandNdlZtcWhoaDBLM2h6eDdpS0VZR2dkTU9CPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6InNhbGx5IiwiZmFtaWx5X25hbWUiOiJ0ZXN0ZXIiLCJsb2NhbGUiOiJlbiIsImlhdCI6MTY2MTM2OTQ5OSwiZXhwIjoxNjYxMzczMDk5fQ.TynczaHlVU8QQ_Tm-l3QFLISgzcPgqBKbdKf_gRQ_BDwKRR4mpVBvBYmfuAmBf_M06OEEHceK8FDi294dJHGWUz77BRCgR3zll886mmUJrKdqznaa1FcaFOZtz_eWGHOMadw47AeGWYSv5trhnwNT_dAAtRel2-edMdI7t1bQhHxrsSw-I-pmUjkrj4zmKnMBK4VKfKjRZceZf99FJen0PiDgq2Ysr3GU_rQzhc9ALd7G_i09R6LeM-98vbleKThi9uOY_CDciZsvtVsGYDCtiBRImsS_ASCGaMxPbmQBoZ7dslIK9lPRUVGIHyj7C7bVqKiwntePt6bjLp5SzVVxg',
+                external_id: '111642381538459694443',
+                image_path: 'https://lh3.googleusercontent.com/a/AItbvml5E1UVHAv6IjwMvVmqhhh0K3hzx7iKEYGgdMOB=s96-c',
+            },
+            user: {
+                email: 'sallytester615@gmail.com',
+            },
+        },
+    },
+    res: {
+        status: 200,
+        headers: {
+            'cache-control': [
+                'max-age=0, private, must-revalidate',
+            ],
+            'content-encoding': [
+                'gzip',
+            ],
+            'content-security-policy': [
+                "default-src 'self' https://cdnjs.cloudflare.com; base-uri 'self'; manifest-src 'self'; worker-src 'self'; font-src 'self' data: https://cdnjs.cloudflare.com; img-src 'self' data: *.amazonaws.com *.slack-edge.com *.slack.com *.googleusercontent.com pbs.twimg.com secure.gravatar.com *.google-analytics.com *.google.com *.wp.com *.dropbox.com unpkg.com pps.whatsapp.net; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com *.googletagmanager.com *.newrelic.com *.nr-data.net *.getatlas.io *.ravenjs.com *.sentry.io player.vimeo.com *.hotjar.com *.stripe.com https://code.highcharts.com; style-src 'self' 'unsafe-inline' 'unsafe-eval' cdnjs.cloudflare.com cloud.typography.com; frame-src 'self' *.youtube.com *.vimeo.com *.hotjar.com *.stripe.com; media-src 'self' *.getatlas.io; connect-src 'self' *.hotjar.com wss://*.hotjar.com *.google-analytics.com *.getatlas.io *.nr-data.net ipgeolocation.abstractapi.com sentry.io wss://app.getatlas.io stats.g.doubleclick.net https://*.loophq.com wss://*.loophq.com *.sentry.io; report-uri https://loophq.com/api/v1/csp_violations",
+            ],
+            'content-type': [
+                'application/json; charset=utf-8',
+            ],
+            date: [
+                'Wed, 24 Aug 2022 19:42:42 GMT',
+            ],
+            etag: [
+                'W/"f70c838a58a3339c66ed3fe0b21083c1"',
+            ],
+            'permissions-policy': [
+                'accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(self), cross-origin-isolated=(self), display-capture=*, document-domain=(), encrypted-media=(self), execution-while-not-rendered=(self), execution-while-out-of-viewport=(self), fullscreen=(self), geolocation=(), gyroscope=(), keyboard-map=(self), magnetometer=(), microphone=(), midi=(), navigation-override=(self), payment=(self), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=(), usb=(), web-share=*, xr-spatial-tracking=(), clipboard-read=(self), clipboard-write=(self), gamepad=(self), speaker-selection=(self), conversion-measurement=(self), focus-without-user-activation=(self), hid=*, idle-detection=(self), interest-cohort=(self), serial=(), sync-script=(self), trust-token-redemption=(self), window-placement=(self), vertical-scroll=(self)',
+            ],
+            'referrer-policy': [
+                'strict-origin-when-cross-origin',
+            ],
+            server: [
+                'nginx',
+            ],
+            'set-cookie': [
+                'ahoy_visit=0271c530-1bba-409e-9dd2-fea6ba5b5586; path=/; expires=Wed, 24 Aug 2022 23:42:41 GMT',
+                '_loop_session=8b6b2e1a0c0ea20fbb17370ac69b1c39; path=/; expires=Sat, 27 Aug 2022 19:42:42 GMT; secure; HttpOnly',
+            ],
+            vary: [
+                'Accept-Encoding',
+            ],
+            'x-content-type-options': [
+                'nosniff',
+            ],
+            'x-frame-options': [
+                'ASAMEORIGIN',
+            ],
+            'x-request-id': [
+                '0c2831b7-d596-4560-92d5-3c7bc61f3542',
+            ],
+            'x-runtime': [
+                '0.587618',
+            ],
+            'transfer-encoding': [
+                'chunked',
+            ],
+            connection: [
+                'keep-alive',
+            ],
+        },
+        body: {
+            success: true,
+            auth: 'eyJhbGciOiJub25lIn0.eyJpZCI6MTMzNywiZmlyc3RfbmFtZSI6InNhbGx5IiwibGFzdF9uYW1lIjoidGVzdGVyIiwiZW1haWwiOiJzYWxseXRlc3RlcjYxNUBnbWFpbC5jb20iLCJ0b2tlbiI6InNhMXFZeHdiUmR3YjFaTnU2NFVNTXdUSyIsInVuc3Vic2NyaWJlZF90b19mb2xsb3dfdXBfZGlnZXN0X2F0IjpudWxsfQ.',
+            user: {
+                klass: 'User',
+                id: 1337,
+                api_token: 'sa1qYxwbRdwb1ZNu64UMMwTK',
+                email: 'sallytester615@gmail.com',
+                first_name: 'sally',
+                last_name: 'tester',
+                display_name: 'sally tester',
+                initials: 'ST',
+                time_zone: 'Eastern Time (US & Canada)',
+                unsubscribed_to_follow_up_digest_at: null,
+                waitlisted_at: null,
+                signup_source: 'loop',
+                onboarding_status: 'onboarded',
+                suggested_tasks_count: 0,
+                profession: null,
+                company_size: null,
+                integration_request: null,
+                unsubscribed_to_marketing_emails_at: null,
+                initial_sync_status: 'iss_complete',
+                share_customer_id: 'K3EyHCVQReih7A',
+                photo_url_xsmall: null,
+                photo_url_small: null,
+                photo_url_medium: null,
+                photo_url_large: null,
+                photo_url_xlarge: null,
+            },
+        },
+    },
+}

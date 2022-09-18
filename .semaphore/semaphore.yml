@@ -1,0 +1,48 @@
+version: v1.0
+name: Uskape Mobile Tests
+agent:
+  machine:
+    type: e1-standard-2
+  containers:
+    - name: main
+      image: semaphoreci/android:29-node
+  image_pull_secrets:
+    - name: docker_creds
+global_job_config:
+  secrets:
+    - name: fastlane
+  env_vars:
+    - name: LC_ALL
+      value: en_US.UTF-8
+    - name: LANG
+      value: en_US.UTF-8
+    # - name: CODECOV_TOKEN
+    #   value: da69cb76-5bf3-472d-84e6-256843dab7d9
+blocks:
+  - name: Install dependencies
+    dependencies: []
+    task:
+      jobs:
+        commands:
+          - checkout -f
+          - cache restore
+          - sudo apt update && sudo apt install yarn
+          - yarn install
+          - cache store
+  - name: Run linter
+    dependencies:
+      - Install dependencies
+    task:
+      prologue:
+        commands:
+          - checkout
+      jobs:
+        - name: run eslint
+          commands:
+            - cache restore
+            - yarn lint
+promotions:
+  - name: Android Test Codepush deploy
+    pipeline_file: android-codepush-deploy-test.yml
+    auto_promote:
+      when: "result = 'passed' and branch = 'main'"
