@@ -1,0 +1,663 @@
+--------- beginning of main
+09-18 20:42:52.075  5097  5097 W com.loopmobile: Unexpected CPU variant for X86 using defaults: x86_64
+09-18 20:42:52.083  5097  5097 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10199; state: ENABLED
+--------- beginning of system
+09-18 20:42:52.086  5097  5097 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.loopmobile]: x86_64, null instrumentation[com.loopmobile.test]: null, null
+09-18 20:42:52.087  5097  5097 W com.loopmobile: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318])
+09-18 20:42:52.088  5097  5097 W com.loopmobile: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460])
+09-18 20:42:52.089  5097  5097 W com.loopmobile: ClassLoaderContext classpath size mismatch. expected=0, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}} | PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674])
+09-18 20:42:52.089  5097  5097 W com.loopmobile: ClassLoaderContext classpath size mismatch. expected=0, found=4 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~iq4XAT1lUV-zcRoDQtdg1g==/com.loopmobile.test-bBJiICGGZRH7h6lSYLSVng==/base.apk*1810352154])
+09-18 20:42:52.092  5097  5097 V GraphicsEnvironment: ANGLE Developer option for 'com.loopmobile' set to: 'default'
+09-18 20:42:52.092  5097  5097 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-18 20:42:52.093  5097  5097 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+09-18 20:42:52.094  5097  5097 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+09-18 20:42:52.095  5097  5097 W com.loopmobile: ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]})
+09-18 20:42:52.095  5097  5097 W com.loopmobile: ClassLoaderContext shared library size mismatch. Expected=0, found=3 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}};PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~iq4XAT1lUV-zcRoDQtdg1g==/com.loopmobile.test-bBJiICGGZRH7h6lSYLSVng==/base.apk*1810352154:/data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/base.apk*617495623])
+09-18 20:42:52.096  5097  5097 W com.loopmobile: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}};PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~iq4XAT1lUV-zcRoDQtdg1g==/com.loopmobile.test-bBJiICGGZRH7h6lSYLSVng==/base.apk*1810352154:/data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/base.apk*617495623])
+09-18 20:42:52.097  5097  5097 W com.loopmobile: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}};PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~iq4XAT1lUV-zcRoDQtdg1g==/com.loopmobile.test-bBJiICGGZRH7h6lSYLSVng==/base.apk*1810352154:/data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/base.apk*617495623])
+09-18 20:42:52.098  5097  5097 W com.loopmobile: ClassLoaderContext classpath size mismatch. expected=0, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}} | PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}};PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~iq4XAT1lUV-zcRoDQtdg1g==/com.loopmobile.test-bBJiICGGZRH7h6lSYLSVng==/base.apk*1810352154:/data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/base.apk*617495623])
+09-18 20:42:52.098  5097  5097 W com.loopmobile: ClassLoaderContext classpath size mismatch. expected=0, found=4 (PCL[] | PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~iq4XAT1lUV-zcRoDQtdg1g==/com.loopmobile.test-bBJiICGGZRH7h6lSYLSVng==/base.apk*1810352154]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]#PCL[/system/framework/android.test.runner.jar*1585996318]{PCL[/system/framework/android.test.base.jar*3790657674]#PCL[/system/framework/android.test.mock.jar*3278543460]}};PCL[/system/framework/android.test.runner.jar*1585996318:/system/framework/android.test.mock.jar*3278543460:/system/framework/android.test.base.jar*3790657674:/data/app/~~iq4XAT1lUV-zcRoDQtdg1g==/com.loopmobile.test-bBJiICGGZRH7h6lSYLSVng==/base.apk*1810352154:/data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/base.apk*617495623])
+09-18 20:42:52.101  5097  5097 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-18 20:42:52.101  5097  5097 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-18 20:42:52.104  5097  5097 I MonitoringInstr: Instrumentation started!
+09-18 20:42:52.127  5097  5097 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+09-18 20:42:52.129  5097  5097 V fb-UnpackingSoSource: locked dso store /data/user/0/com.loopmobile/lib-main
+09-18 20:42:52.129  5097  5097 V fb-UnpackingSoSource: deps mismatch on deps store: regenerating
+09-18 20:42:52.129  5097  5097 V fb-UnpackingSoSource: so store dirty: regenerating
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libc++_shared.so: deferring to libdir
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libfabricjni.so: deferring to libdir
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libfb.so: deferring to libdir
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libfbjni.so: deferring to libdir
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libfolly_runtime.so: deferring to libdir
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libglog.so: deferring to libdir
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libglog_init.so: deferring to libdir
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libimagepipeline.so: deferring to libdir
+09-18 20:42:52.142  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libjsc.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libjscexecutor.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libjsi.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libjsijniprofiler.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libjsinspector.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/liblogger.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libmapbufferjni.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libnative-filters.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libnative-imagetranscoder.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_codegen_rncore.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_config.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_debug.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_nativemodule_core.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_animations.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_attributedstring.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_componentregistry.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_core.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_debug.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_graphics.so: deferring to libdir
+09-18 20:42:52.143  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_imagemanager.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_leakchecker.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_mapbuffer.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_mounting.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_runtimescheduler.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_scheduler.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_telemetry.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_templateprocessor.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_textlayoutmanager.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_uimanager.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_utils.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreactnativeblob.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreactnativejni.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreactperfloggerjni.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libreanimated.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_image.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_root.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_scrollview.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_text.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_textinput.so: deferring to libdir
+09-18 20:42:52.144  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_unimplementedview.so: deferring to libdir
+09-18 20:42:52.145  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_view.so: deferring to libdir
+09-18 20:42:52.145  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libruntimeexecutor.so: deferring to libdir
+09-18 20:42:52.145  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libturbomodulejsijni.so: deferring to libdir
+09-18 20:42:52.145  5097  5097 D ApkSoSource: not allowing consideration of lib/x86_64/libyoga.so: deferring to libdir
+09-18 20:42:52.145  5097  5097 V fb-UnpackingSoSource: regenerating DSO store com.facebook.soloader.a
+09-18 20:42:52.145  5097  5097 V fb-UnpackingSoSource: Finished regenerating DSO store com.facebook.soloader.a
+09-18 20:42:52.145  5097  5097 V fb-UnpackingSoSource: starting syncer worker
+09-18 20:42:52.147  5097  5097 V fb-UnpackingSoSource: releasing dso store lock for /data/user/0/com.loopmobile/lib-main (from syncer thread)
+09-18 20:42:52.148  5097  5097 V fb-UnpackingSoSource: not releasing dso store lock for /data/user/0/com.loopmobile/lib-main (syncer thread started)
+09-18 20:42:52.149  5097  5097 D SoLoader: libjscexecutor.so not found on /data/data/com.loopmobile/lib-main
+09-18 20:42:52.149  5097  5097 D SoLoader: libjscexecutor.so found on /data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/lib/x86_64
+09-18 20:42:52.149  5097  5097 D SoLoader: Not resolving dependencies for libjscexecutor.so
+09-18 20:42:52.155  5097  5097 D JavaScriptCore.Version: 250230.2.1
+09-18 20:42:52.160  5097  5112 I UsageTrackerFacilitator: Usage tracking enabled
+09-18 20:42:52.161  5097  5112 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~iq4XAT1lUV-zcRoDQtdg1g==/com.loopmobile.test-bBJiICGGZRH7h6lSYLSVng==/base.apk]
+09-18 20:42:52.161  5097  5112 W com.loopmobile: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+09-18 20:42:52.222  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxANRHandler; annotation class 2323
+09-18 20:42:52.222  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxANRHandler; annotation class 2323
+09-18 20:42:52.222  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxANRHandler; annotation class 2323
+09-18 20:42:52.222  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxCrashHandler; annotation class 2323
+09-18 20:42:52.222  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxCrashHandler; annotation class 2323
+09-18 20:42:52.222  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxCrashHandler; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxMain; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxMain; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxMain; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxMainKt; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxMainKt; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/DetoxMainKt; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/LaunchIntentsFactory; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/LaunchIntentsFactory; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/LaunchIntentsFactory; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/NotificationDataParser; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/NotificationDataParser; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/NotificationDataParser; annotation class 2323
+09-18 20:42:52.223  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/TestEngineFacade; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/TestEngineFacade; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/TestEngineFacade; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/action/common/MotionDefs; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/action/common/MotionDefs; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/action/common/MotionDefs; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ActionsExecutor; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ActionsExecutor; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ActionsExecutor; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/CleanupActionHandler; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/CleanupActionHandler; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/CleanupActionHandler; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionHandlersKt; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionHandlersKt; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionHandlersKt; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcher; annotation class 2323
+09-18 20:42:52.224  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcher; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcher; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcherKt; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcherKt; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcherKt; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerAdapter; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerAdapter; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerAdapter; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfo; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfo; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfo; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfoKt; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfoKt; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfoKt; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsEventsActionsHandler; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsEventsActionsHandler; annotation class 2323
+09-18 20:42:52.225  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsEventsActionsHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsRecordingStateActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsRecordingStateActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsRecordingStateActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InvokeActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InvokeActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/InvokeActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/QueryStatusActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/QueryStatusActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/QueryStatusActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ReactNativeReloadActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ReactNativeReloadActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ReactNativeReloadActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ReadyActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ReadyActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ReadyActionHandler; annotation class 2323
+09-18 20:42:52.226  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ScarceActionHandler; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ScarceActionHandler; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/adapters/server/ScarceActionHandler; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/DetoxLog; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/DetoxLog; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/DetoxLog; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/ErrorUtilsKt; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/ErrorUtilsKt; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/ErrorUtilsKt; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/JsonConverter; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/JsonConverter; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/JsonConverter; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/TextFileReader; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/TextFileReader; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/TextFileReader; annotation class 2323
+09-18 20:42:52.227  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/UIThread; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/UIThread; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/UIThread; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/collect/PairsIterator; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/collect/PairsIterator; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/collect/PairsIterator; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/CallInfo; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/CallInfo; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/CallInfo; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/SpyingInvocationHandler; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/SpyingInvocationHandler; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/SpyingInvocationHandler; annotation class 2323
+09-18 20:42:52.228  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/config/DetoxConfig; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/config/DetoxConfig; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/config/DetoxConfig; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/config/DetoxIdlePolicyConfig; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/config/DetoxIdlePolicyConfig; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/config/DetoxIdlePolicyConfig; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/DeviceDisplay; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/DeviceDisplay; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/DeviceDisplay; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/EventsInjectorReflected; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/EventsInjectorReflected; annotation class 2323
+09-18 20:42:52.229  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/EventsInjectorReflected; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/UiControllerSpy; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/UiControllerSpy; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/UiControllerSpy; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/AdjustSliderToPositionAction; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/AdjustSliderToPositionAction; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/AdjustSliderToPositionAction; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/CheckBoxAttributes; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/CheckBoxAttributes; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/CheckBoxAttributes; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/CommonAttributes; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/CommonAttributes; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/CommonAttributes; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+09-18 20:42:52.230  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/DetoxSingleTap; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/DetoxSingleTap; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/DetoxSingleTap; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/GetAttributesAction; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/GetAttributesAction; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/GetAttributesAction; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ProgressBarAttributes; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ProgressBarAttributes; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ProgressBarAttributes; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScreenshotResult; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScreenshotResult; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScreenshotResult; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexAction; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexAction; annotation class 2323
+09-18 20:42:52.231  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexAction; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexActionKt; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexActionKt; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexActionKt; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/SliderAttributes; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/SliderAttributes; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/SliderAttributes; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/TakeViewScreenshotAction; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/TakeViewScreenshotAction; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/TakeViewScreenshotAction; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/TextViewAttributes; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/TextViewAttributes; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/TextViewAttributes; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ViewScreenshot; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ViewScreenshot; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/ViewScreenshot; annotation class 2323
+09-18 20:42:52.232  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurationKt; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurationKt; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurationKt; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurations; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurations; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurations; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEvents; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEvents; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEvents; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEventsKt; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEventsKt; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEventsKt; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/ReflectUtils; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/ReflectUtils; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/ReflectUtils; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEvents; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEvents; annotation class 2323
+09-18 20:42:52.233  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEvents; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEventsKt; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEventsKt; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEventsKt; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/CommunitySliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/CommunitySliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/CommunitySliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/LegacySliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/LegacySliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/LegacySliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelper; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelperKt; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelperKt; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelperKt; annotation class 2323
+09-18 20:42:52.234  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/utils/UiControllerUtils; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/utils/UiControllerUtils; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/common/utils/UiControllerUtils; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/IsAssignableFromMatcher; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/IsAssignableFromMatcher; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/IsAssignableFromMatcher; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewAtIndexMatcher; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewAtIndexMatcher; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewAtIndexMatcher; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewMatchers; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewMatchers; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewMatchers; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirer; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirer; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirer; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirerKt; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirerKt; annotation class 2323
+09-18 20:42:52.235  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirerKt; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewBack; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewBack; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewBack; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewForward; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewForward; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewForward; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollAction; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollAction; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionBase; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollAction; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionBase; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionStaleAtEdge; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionStaleAtEdge; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionBase; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionStaleAtEdge; annotation class 2323
+09-18 20:42:52.236  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionBase; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxSwipe; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxSwipe; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxSwipe; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/FlinglessSwiper; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/FlinglessSwiper; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/FlinglessSwiper; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollEdgeException; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollEdgeException; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollEdgeException; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollProbes; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollProbes; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollProbes; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHBack; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHBack; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHBack; annotation class 2323
+09-18 20:42:52.237  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHForward; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHForward; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHForward; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVBack; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVBack; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVBack; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVForward; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVForward; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVForward; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelper; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelper; annotation class 2323
+09-18 20:42:52.238  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelper; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelperKt; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelperKt; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelperKt; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2D; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2D; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2D; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2DKt; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2DKt; annotation class 2323
+09-18 20:42:52.239  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2DKt; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/MQThreadReflected; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/MQThreadReflected; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/MQThreadReflected; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/MQThreadsReflector; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/MQThreadsReflector; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/MQThreadsReflector; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/RNVersion; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/RNVersion; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/RNVersion; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtension; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtension; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtension; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtensionKt; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtensionKt; annotation class 2323
+09-18 20:42:52.240  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtensionKt; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResources; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResources; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResources; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResourcesKt; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResourcesKt; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResourcesKt; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeInfo; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeInfo; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeInfo; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitor; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitor; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitor; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitorKt; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitorKt; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitorKt; annotation class 2323
+09-18 20:42:52.241  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeReLoader; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeReLoader; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeReLoader; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpers; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpers; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpers; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpersKt; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpersKt; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpersKt; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceKt; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceKt; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceKt; annotation class 2323
+09-18 20:42:52.242  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceLegacy; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceLegacy; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceLegacy; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/IdlingResourceDescription; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/IdlingResourceDescription; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/IdlingResourceDescription; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/ModuleReflected; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/ModuleReflected; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/ModuleReflected; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/NetworkingModuleReflected; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/NetworkingModuleReflected; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/NetworkingModuleReflected; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/SerialExecutorReflected; annotation class 2323
+09-18 20:42:52.243  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/SerialExecutorReflected; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/SerialExecutorReflected; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategy; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategy; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategy; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategy; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategy; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategy; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/IdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/IdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.244  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/IdleInterrogationStrategyKt; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/RN62TimingModuleReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/RN62TimingModuleReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/RN62TimingModuleReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimerReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimerReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimerReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimersIdlingResource; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimersIdlingResource; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimersIdlingResource; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimingModuleReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimingModuleReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimingModuleReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflected; annotation class 2323
+09-18 20:42:52.245  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflectedKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflectedKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflectedKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflected; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflected; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflected; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflectedKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflectedKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflectedKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66Workaround; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66Workaround; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66Workaround; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66WorkaroundKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66WorkaroundKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66WorkaroundKt; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflected; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflected; annotation class 2323
+09-18 20:42:52.246  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflected; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflectedKt; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflectedKt; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflectedKt; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIModuleIdlingResource; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIModuleIdlingResource; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIModuleIdlingResource; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflected; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflected; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflected; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflectedKt; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflectedKt; annotation class 2323
+09-18 20:42:52.247  5097  5112 W com.loopmobile: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflectedKt; annotation class 2323
+09-18 20:42:52.248  5097  5112 W com.loopmobile: Unable to resolve Lkotlinx/android/extensions/CacheImplementation; annotation class 2323
+09-18 20:42:52.248  5097  5112 W com.loopmobile: Unable to resolve Lkotlinx/android/extensions/CacheImplementation; annotation class 2323
+09-18 20:42:52.248  5097  5112 W com.loopmobile: Unable to resolve Lkotlinx/android/extensions/CacheImplementation; annotation class 2323
+09-18 20:42:52.259  5097  5112 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+09-18 20:42:52.259  5097  5112 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+09-18 20:42:52.259  5097  5112 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+09-18 20:42:52.260  5097  5112 I TestRunner: run started: 1 tests
+09-18 20:42:52.261  5097  5112 I TestRunner: started: runDetoxTests(com.loopmobile.DetoxTest)
+09-18 20:42:52.264  5097  5112 D EventInjectionStrategy: Creating injection strategy with input manager.
+09-18 20:42:52.289  5097  5116 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+09-18 20:42:52.290  5097  5116 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+09-18 20:42:52.292  5097  5116 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+09-18 20:42:52.308  5097  5097 D LifecycleMonitor: Lifecycle status change: com.loopmobile.MainActivity@74ab087 in: PRE_ON_CREATE
+09-18 20:42:52.333  5097  5097 D LifecycleMonitor: Lifecycle status change: com.loopmobile.MainActivity@74ab087 in: CREATED
+09-18 20:42:52.334  5097  5097 D LifecycleMonitor: Lifecycle status change: com.loopmobile.MainActivity@74ab087 in: STARTED
+09-18 20:42:52.334  5097  5119 D SoLoader: libreactnativejni.so not found on /data/data/com.loopmobile/lib-main
+09-18 20:42:52.334  5097  5119 D SoLoader: libreactnativejni.so found on /data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/lib/x86_64
+09-18 20:42:52.334  5097  5119 D SoLoader: Not resolving dependencies for libreactnativejni.so
+09-18 20:42:52.335  5097  5097 D LifecycleMonitor: Lifecycle status change: com.loopmobile.MainActivity@74ab087 in: RESUMED
+09-18 20:42:52.335  5097  5119 D SoLoader: libfbjni.so not found on /data/data/com.loopmobile/lib-main
+09-18 20:42:52.335  5097  5119 D SoLoader: libfbjni.so found on /data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/lib/x86_64
+09-18 20:42:52.335  5097  5119 D SoLoader: Not resolving dependencies for libfbjni.so
+09-18 20:42:52.352  5097  5119 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+09-18 20:42:52.355  5097  5115 D HostConnection: createUnique: call
+09-18 20:42:52.363  5097  5115 D HostConnection: HostConnection::get() New Host Connection established 0x75f1af598610, tid 5115
+09-18 20:42:52.371  5097  5115 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_1 
+09-18 20:42:52.377  5097  5115 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-18 20:42:52.377  5097  5115 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+09-18 20:42:52.378  5097  5115 D EGL_emulation: eglCreateContext: 0x75f1af597110: maj 3 min 1 rcv 4
+09-18 20:42:52.379  5097  5115 D EGL_emulation: eglMakeCurrent: 0x75f1af597110: ver 3 1 (tinfo 0x75f3c99f0080) (first time)
+09-18 20:42:52.387  5097  5115 I Gralloc4: mapper 4.x is not supported
+09-18 20:42:52.390  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+09-18 20:42:52.391  5097  5115 D HostConnection: createUnique: call
+09-18 20:42:52.392  5097  5115 D HostConnection: HostConnection::get() New Host Connection established 0x75f1af599090, tid 5115
+09-18 20:42:52.392  5097  5115 D goldfish-address-space: allocate: Ask for block of size 0x100
+09-18 20:42:52.392  5097  5115 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3efffe000 size 0x2000
+09-18 20:42:52.424  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+09-18 20:42:52.429  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+09-18 20:42:52.433  5097  5115 W Gralloc4: allocator 4.x is not supported
+09-18 20:42:52.434  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+09-18 20:42:52.435  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+09-18 20:42:52.435  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.b
+09-18 20:42:52.442  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+09-18 20:42:52.448  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+09-18 20:42:52.449  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$b
+09-18 20:42:52.450  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+09-18 20:42:52.453  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$b
+09-18 20:42:52.454  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+09-18 20:42:52.454  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+09-18 20:42:52.454  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class m3.a
+09-18 20:42:52.455  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+09-18 20:42:52.456  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+09-18 20:42:52.457  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.b
+09-18 20:42:52.457  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+09-18 20:42:52.458  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.l
+09-18 20:42:52.459  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+09-18 20:42:52.462  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.m
+09-18 20:42:52.462  5097  5115 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_1 
+09-18 20:42:52.464  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+09-18 20:42:52.465  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.q
+09-18 20:42:52.465  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+09-18 20:42:52.466  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+09-18 20:42:52.466  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.w
+09-18 20:42:52.479  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+09-18 20:42:52.481  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.reactnativegooglesignin.RNGoogleSigninButtonViewManager
+09-18 20:42:52.498  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaProviderManager
+09-18 20:42:52.504  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewManager
+09-18 20:42:52.505  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.p
+09-18 20:42:52.505  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenContainerViewManager
+09-18 20:42:52.505  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenViewManager
+09-18 20:42:52.506  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackViewManager
+09-18 20:42:52.506  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderConfigViewManager
+09-18 20:42:52.507  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderSubviewManager
+09-18 20:42:52.507  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.SearchBarManager
+09-18 20:42:52.507  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager
+09-18 20:42:52.508  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager
+09-18 20:42:52.510  5097  5122 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+09-18 20:42:52.514  5097  5122 D SoLoader: libyoga.so not found on /data/data/com.loopmobile/lib-main
+09-18 20:42:52.514  5097  5122 D SoLoader: libyoga.so found on /data/app/~~Dnq1THnXc9asscVp1Hrxxw==/com.loopmobile--8V80K5EO2UpaNpT8A_kdQ==/lib/x86_64
+09-18 20:42:52.514  5097  5122 D SoLoader: Not resolving dependencies for libyoga.so
+09-18 20:42:52.549  5097  5112 I Detox   : Detox server connection details: url=ws://localhost:34433, sessionId=19ce2c9b-1e27-4a93-7d6c-e48325f90d7c
+09-18 20:42:52.587  5097  5134 I DetoxDispatcher: Handling action '_init' (ID #0)...
+09-18 20:42:52.587  5097  5134 I Detox   : Connecting to server...
+09-18 20:42:52.588  5097  5134 I DetoxWSClient: At connectToServer
+09-18 20:42:52.598  5097  5121 I ReactNativeJS: Running "loopMobile
+09-18 20:42:52.606  5097  5097 D DetoxRNLoading: Got new RN-context directly and immediately
+09-18 20:42:52.606  5097  5134 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+09-18 20:42:52.610  5097  5134 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+09-18 20:42:52.610  5097  5134 D DetoxRNHelpers: Native RN module resolution (class com.reactnativecommunity.asyncstorage.AsyncStorageModule): no such class
+09-18 20:42:52.610  5097  5134 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+09-18 20:42:52.611  5097  5134 D AsyncStorageIR: IR for Async-Storage is required! (legacy=true)
+09-18 20:42:52.612  5097  5097 D AsyncStorageIRLegacy: Async-storage is busy!
+09-18 20:42:52.618  5097  5134 I DetoxDispatcher: Done with action '_init'
+09-18 20:42:52.813  5097  5122 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.b0
+09-18 20:42:52.953  5097  5097 W com.loopmobile: ClassLoaderContext shared library size mismatch. Expected=3, found=4 (PCL[]{PCL[/system/framework/org.apache.http.legacy.jar*2058259660]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798122]#PCL[/system/framework/com.android.location.provider.jar*3633238673]} | PCL[]{PCL[/system/framework/org.apache.http.legacy.jar*2058259660]#PCL[/system/framework/com.android.media.remotedisplay.jar*3472798122]#PCL[/system/framework/com.android.location.provider.jar*3633238673]#PCL[/system_ext/framework/androidx.window.sidecar.jar*3539530913]})
+09-18 20:42:52.960  5097  5097 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+09-18 20:42:52.975  5097  5097 I DynamiteModule: Considering local module com.google.android.gms.signinbutton_dynamite:0 and remote module com.google.android.gms.signinbutton_dynamite:2
+09-18 20:42:52.975  5097  5097 I DynamiteModule: Selected remote version of com.google.android.gms.signinbutton_dynamite, version >= 2
+09-18 20:42:53.006  5097  5097 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10199; state: ENABLED
+09-18 20:42:54.611  5097  5115 D EGL_emulation: app_time_stats: avg=89.28ms min=0.89ms max=1353.63ms count=21
+09-18 20:42:55.630  5097  5140 D DetoxWSClient: Retrying...
+09-18 20:42:55.630  5097  5140 I DetoxWSClient: At connectToServer
+09-18 20:42:58.642  5097  5156 D DetoxWSClient: Retrying...
+09-18 20:42:58.642  5097  5156 I DetoxWSClient: At connectToServer
+09-18 20:43:01.650  5097  5158 D DetoxWSClient: Retrying...
+09-18 20:43:01.651  5097  5158 I DetoxWSClient: At connectToServer
+09-18 20:43:04.660  5097  5160 D DetoxWSClient: Retrying...
+09-18 20:43:04.660  5097  5160 I DetoxWSClient: At connectToServer
+09-18 20:43:07.663  5097  5162 D DetoxWSClient: Retrying...
+09-18 20:43:07.663  5097  5162 I DetoxWSClient: At connectToServer
+09-18 20:43:10.672  5097  5164 D DetoxWSClient: Retrying...
+09-18 20:43:10.672  5097  5164 I DetoxWSClient: At connectToServer
+09-18 20:43:13.682  5097  5166 D DetoxWSClient: Retrying...
+09-18 20:43:13.682  5097  5166 I DetoxWSClient: At connectToServer
+09-18 20:43:16.820  5097  5168 D DetoxWSClient: Retrying...
+09-18 20:43:16.820  5097  5168 I DetoxWSClient: At connectToServer
+09-18 20:43:19.826  5097  5170 D DetoxWSClient: Retrying...
+09-18 20:43:19.826  5097  5170 I DetoxWSClient: At connectToServer
+09-18 20:43:22.854  5097  5172 D DetoxWSClient: Retrying...
+09-18 20:43:22.854  5097  5172 I DetoxWSClient: At connectToServer
+09-18 20:43:25.905  5097  5175 D DetoxWSClient: Retrying...
+09-18 20:43:25.905  5097  5175 I DetoxWSClient: At connectToServer
+09-18 20:43:28.916  5097  5179 D DetoxWSClient: Retrying...
+09-18 20:43:28.916  5097  5179 I DetoxWSClient: At connectToServer
+09-18 20:43:31.933  5097  5181 D DetoxWSClient: Retrying...
+09-18 20:43:31.933  5097  5181 I DetoxWSClient: At connectToServer
+09-18 20:43:34.944  5097  5183 D DetoxWSClient: Retrying...
+09-18 20:43:34.944  5097  5183 I DetoxWSClient: At connectToServer
+09-18 20:43:37.954  5097  5185 D DetoxWSClient: Retrying...
+09-18 20:43:37.954  5097  5185 I DetoxWSClient: At connectToServer
+09-18 20:43:40.968  5097  5187 D DetoxWSClient: Retrying...
+09-18 20:43:40.968  5097  5187 I DetoxWSClient: At connectToServer
+09-18 20:43:42.941  5097  5097 I Choreographer: Skipped 57 frames!  The application may be doing too much work on its main thread.
+09-18 20:43:44.471  5097  5189 D DetoxWSClient: Retrying...
+09-18 20:43:44.471  5097  5189 I DetoxWSClient: At connectToServer
+09-18 20:43:45.427  5097  5097 I Choreographer: Skipped 35 frames!  The application may be doing too much work on its main thread.
+09-18 20:43:47.404  5097  5097 I Choreographer: Skipped 85 frames!  The application may be doing too much work on its main thread.
+09-18 20:43:47.476  5097  5191 D DetoxWSClient: Retrying...
+09-18 20:43:47.476  5097  5191 I DetoxWSClient: At connectToServer
+09-18 20:43:50.486  5097  5193 D DetoxWSClient: Retrying...
+09-18 20:43:50.486  5097  5193 I DetoxWSClient: At connectToServer
+09-18 20:43:53.499  5097  5195 D DetoxWSClient: Retrying...
+09-18 20:43:53.500  5097  5195 I DetoxWSClient: At connectToServer
+09-18 20:43:56.515  5097  5197 D DetoxWSClient: Retrying...
+09-18 20:43:56.515  5097  5197 I DetoxWSClient: At connectToServer
+09-18 20:43:58.670  5097  5097 I Choreographer: Skipped 41 frames!  The application may be doing too much work on its main thread.
+09-18 20:43:59.529  5097  5199 D DetoxWSClient: Retrying...
+09-18 20:43:59.530  5097  5199 I DetoxWSClient: At connectToServer
+09-18 20:44:02.547  5097  5201 D DetoxWSClient: Retrying...
+09-18 20:44:02.548  5097  5201 I DetoxWSClient: At connectToServer
+09-18 20:44:05.566  5097  5203 D DetoxWSClient: Retrying...
+09-18 20:44:05.566  5097  5203 I DetoxWSClient: At connectToServer
+09-18 20:44:08.578  5097  5205 D DetoxWSClient: Retrying...
+09-18 20:44:08.579  5097  5205 I DetoxWSClient: At connectToServer
+09-18 20:44:11.588  5097  5207 D DetoxWSClient: Retrying...
+09-18 20:44:11.588  5097  5207 I DetoxWSClient: At connectToServer
+09-18 20:44:14.597  5097  5209 D DetoxWSClient: Retrying...
+09-18 20:44:14.597  5097  5209 I DetoxWSClient: At connectToServer
+09-18 20:44:17.607  5097  5211 D DetoxWSClient: Retrying...
+09-18 20:44:17.607  5097  5211 I DetoxWSClient: At connectToServer
+09-18 20:44:20.615  5097  5213 D DetoxWSClient: Retrying...
+09-18 20:44:20.615  5097  5213 I DetoxWSClient: At connectToServer
+09-18 20:44:23.624  5097  5215 D DetoxWSClient: Retrying...
+09-18 20:44:23.624  5097  5215 I DetoxWSClient: At connectToServer
+09-18 20:44:26.633  5097  5217 D DetoxWSClient: Retrying...
+09-18 20:44:26.633  5097  5217 I DetoxWSClient: At connectToServer
+09-18 20:44:29.642  5097  5219 D DetoxWSClient: Retrying...
+09-18 20:44:29.642  5097  5219 I DetoxWSClient: At connectToServer
+09-18 20:44:32.651  5097  5221 D DetoxWSClient: Retrying...
+09-18 20:44:32.652  5097  5221 I DetoxWSClient: At connectToServer
+09-18 20:44:35.661  5097  5223 D DetoxWSClient: Retrying...
+09-18 20:44:35.662  5097  5223 I DetoxWSClient: At connectToServer
+09-18 20:44:38.678  5097  5226 D DetoxWSClient: Retrying...
+09-18 20:44:38.678  5097  5226 I DetoxWSClient: At connectToServer
+09-18 20:44:41.688  5097  5228 D DetoxWSClient: Retrying...
+09-18 20:44:41.688  5097  5228 I DetoxWSClient: At connectToServer
+09-18 20:44:44.697  5097  5230 D DetoxWSClient: Retrying...
+09-18 20:44:44.698  5097  5230 I DetoxWSClient: At connectToServer
+09-18 20:44:47.706  5097  5232 D DetoxWSClient: Retrying...
+09-18 20:44:47.707  5097  5232 I DetoxWSClient: At connectToServer
+09-18 20:44:50.716  5097  5234 D DetoxWSClient: Retrying...
+09-18 20:44:50.716  5097  5234 I DetoxWSClient: At connectToServer

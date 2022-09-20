@@ -1,0 +1,500 @@
+Sep 18 20:42:56 detox[17285] TRACE: [DETOX_CREATE] created a Detox instance with config:
+{
+  appsConfig: {
+    default: {
+      type: 'android.apk',
+      binaryPath: 'android/app/build/outputs/apk/release/app-release.apk',
+      build: 'cd android && ./gradlew --no-daemon assembleRelease assembleAndroidTest -DtestBuildType=release && cd ..'
+    }
+  },
+  artifactsConfig: {
+    rootDir: 'artifacts/android.emu.release.2022-09-18 17-42-54Z',
+    plugins: {
+      log: {
+        enabled: true,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      screenshot: {
+        enabled: true,
+        shouldTakeAutomaticSnapshots: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      video: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      instruments: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      timeline: {
+        enabled: false
+      },
+      uiHierarchy: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      }
+    },
+    pathBuilder: ArtifactPathBuilder {
+      _rootDir: 'artifacts/android.emu.release.2022-09-18 17-42-54Z'
+    }
+  },
+  behaviorConfig: {
+    init: {
+      reinstallApp: true,
+      exposeGlobals: true
+    },
+    cleanup: {
+      shutdownDevice: false
+    },
+    launchApp: 'auto'
+  },
+  cliConfig: {
+    recordLogs: 'all',
+    configuration: 'android.emu.release',
+    useCustomLogger: true
+  },
+  configurationName: 'android.emu.release',
+  deviceConfig: {
+    type: 'android.emulator',
+    device: {
+      avdName: 'Pixel_XL_API_31'
+    }
+  },
+  runnerConfig: {
+    testRunner: 'jest',
+    runnerConfig: 'e2e/config.json',
+    specs: 'e2e',
+    skipLegacyWorkersInjection: true
+  },
+  sessionConfig: {
+    autoStart: true,
+    sessionId: '19ce2c9b-1e27-4a93-7d6c-e48325f90d7c',
+    debugSynchronization: 10000
+  }
+}
+Sep 18 20:42:56 detox[17285] DEBUG: [WSS_CREATE] Detox server listening on localhost:34433...
+Sep 18 20:42:56 detox[17285] DEBUG: [WSS_CONNECTION, #59502] registered a new connection.
+Sep 18 20:42:56 detox[17285] TRACE: [WS_OPEN] opened web socket to: ws://localhost:34433
+Sep 18 20:42:56 detox[17285] TRACE: [WS_SEND] {"type":"login","params":{"sessionId":"19ce2c9b-1e27-4a93-7d6c-e48325f90d7c","role":"tester"},"messageId":0}
+Sep 18 20:42:56 detox[17285] TRACE: [WSS_GET_FROM, #59502] {"type":"login","params":{"sessionId":"19ce2c9b-1e27-4a93-7d6c-e48325f90d7c","role":"tester"},"messageId":0}
+Sep 18 20:42:56 detox[17285] TRACE: [SESSION_CREATED] created session 19ce2c9b-1e27-4a93-7d6c-e48325f90d7c
+Sep 18 20:42:56 detox[17285] TRACE: [WSS_SEND_TO, #tester] {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+Sep 18 20:42:56 detox[17285] TRACE: [SESSION_JOINED] tester joined session 19ce2c9b-1e27-4a93-7d6c-e48325f90d7c
+Sep 18 20:42:56 detox[17285] TRACE: [WS_MESSAGE] {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+ 
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #0] "/home/x/Android/Sdk/emulator/emulator" -list-avds --verbose
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #0] Pixel_XL_API_31
+
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #1] "/home/x/Android/Sdk/emulator/emulator" -version 
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #1] Android emulator version 31.2.10.0 (build_id 8420304) (CL:N/A)
+Copyright (C) 2006-2017 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+
+Sep 18 20:42:56 detox[17285] DEBUG: [EMU_BIN_VERSION_DETECT] Detected emulator binary version { major: 31, minor: 2, patch: 10, toString: [Function: toString] }
+Sep 18 20:42:56 detox[17285] DEBUG: [ALLOCATE_DEVICE] Trying to allocate a device based on "Pixel_XL_API_31"
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #2] "/home/x/Android/Sdk/platform-tools/adb"  devices
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_SUCCESS, #2] List of devices attached
+emulator-17622	device
+
+
+Sep 18 20:42:56 detox[17285] TRACE: [TELNET_CONNECTING] port: 17622, host: localhost
+Sep 18 20:42:56 detox[17285] DEBUG: [DEVICE_LOOKUP] Found a matching & free device emulator-17622
+Sep 18 20:42:56 detox[17285] DEBUG: [ALLOCATE_DEVICE] Settled on emulator-17622
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #3] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "getprop dev.bootcomplete"
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #3] 1
+
+Sep 18 20:42:56 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBootDevice({
+  deviceId: 'emulator-17622',
+  type: 'Pixel_XL_API_31',
+  coldBoot: false
+})
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #4] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "getprop ro.build.version.sdk"
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #4] 31
+
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #5] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "settings put global animator_duration_scale 0"
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #5] 
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #6] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "settings put global window_animation_scale 0"
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #6] 
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #7] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "settings put global transition_animation_scale 0"
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #7] 
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #8] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #8]   mWakefulness=Awake
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x0
+  mWakeUpWhenPluggedOrUnpluggedConfig=false
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=-1
+  mUserInactiveOverrideFromWindowManager=false
+  mUserId=0
+  mWakeLockSummary=0x0
+  mUserInteractionBackoffMillis=60000
+
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #9] "/home/x/Android/Sdk/build-tools/33.0.0/aapt" dump badging "/home/x/Documents/work-projects/USKAPE/loop-mobile/android/app/build/outputs/apk/release/app-release.apk"
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #9] package: name='com.loopmobile' versionCode='1' versionName='1.0' platformBuildVersionName='12' platformBuildVersionCode='31' compileSdkVersion='31' compileSdkVersionCodename='12'
+sdkVersion:'21'
+targetSdkVersion:'31'
+uses-permission: name='android.permission.INTERNET'
+application-label:'loopMobile'
+application-label-af:'loopMobile'
+application-label-am:'loopMobile'
+application-label-ar:'loopMobile'
+application-label-as:'loopMobile'
+application-label-az:'loopMobile'
+application-label-be:'loopMobile'
+application-label-bg:'loopMobile'
+application-label-bn:'loopMobile'
+application-label-bs:'loopMobile'
+application-label-ca:'loopMobile'
+application-label-cs:'loopMobile'
+application-label-da:'loopMobile'
+application-label-de:'loopMobile'
+application-label-el:'loopMobile'
+application-label-en-AU:'loopMobile'
+application-label-en-CA:'loopMobile'
+application-label-en-GB:'loopMobile'
+application-label-en-IN:'loopMobile'
+application-label-en-XC:'loopMobile'
+application-label-es:'loopMobile'
+application-label-es-US:'loopMobile'
+application-label-et:'loopMobile'
+application-label-eu:'loopMobile'
+application-label-fa:'loopMobile'
+application-label-fi:'loopMobile'
+application-label-fr:'loopMobile'
+application-label-fr-CA:'loopMobile'
+application-label-gl:'loopMobile'
+application-label-gu:'loopMobile'
+application-label-hi:'loopMobile'
+application-label-hr:'loopMobile'
+application-label-hu:'loopMobile'
+application-label-hy:'loopMobile'
+application-label-in:'loopMobile'
+application-label-is:'loopMobile'
+application-label-it:'loopMobile'
+application-label-iw:'loopMobile'
+application-label-ja:'loopMobile'
+application-label-ka:'loopMobile'
+application-label-kk:'loopMobile'
+application-label-km:'loopMobile'
+application-label-kn:'loopMobile'
+application-label-ko:'loopMobile'
+application-label-ky:'loopMobile'
+application-label-lo:'loopMobile'
+application-label-lt:'loopMobile'
+application-label-lv:'loopMobile'
+application-label-mk:'loopMobile'
+application-label-ml:'loopMobile'
+application-label-mn:'loopMobile'
+application-label-mr:'loopMobile'
+application-label-ms:'loopMobile'
+application-label-my:'loopMobile'
+application-label-nb:'loopMobile'
+application-label-ne:'loopMobile'
+application-label-nl:'loopMobile'
+application-label-or:'loopMobile'
+application-label-pa:'loopMobile'
+application-label-pl:'loopMobile'
+application-label-pt:'loopMobile'
+application-label-pt-BR:'loopMobile'
+application-label-pt-PT:'loopMobile'
+application-label-ro:'loopMobile'
+application-label-ru:'loopMobile'
+application-label-si:'loopMobile'
+application-label-sk:'loopMobile'
+application-label-sl:'loopMobile'
+application-label-sq:'loopMobile'
+application-label-sr:'loopMobile'
+application-label-sr-Latn:'loopMobile'
+application-label-sv:'loopMobile'
+application-label-sw:'loopMobile'
+application-label-ta:'loopMobile'
+application-label-te:'loopMobile'
+application-label-th:'loopMobile'
+application-label-tl:'loopMobile'
+application-label-tr:'loopMobile'
+application-label-uk:'loopMobile'
+application-label-ur:'loopMobile'
+application-label-uz:'loopMobile'
+application-label-vi:'loopMobile'
+application-label-zh-CN:'loopMobile'
+application-label-zh-HK:'loopMobile'
+application-label-zh-TW:'loopMobile'
+application-label-zu:'loopMobile'
+application-icon-160:'res/u3.png'
+application-icon-240:'res/SD.png'
+application-icon-320:'res/jy.png'
+application-icon-480:'res/D2.png'
+application-icon-640:'res/CG.png'
+application-icon-65534:'res/u3.png'
+application: label='loopMobile' icon='res/u3.png'
+launchable-activity: name='com.loopmobile.MainActivity'  label='loopMobile' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+main
+other-activities
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '160' '240' '320' '480' '640' '65534'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'
+
+Sep 18 20:42:56 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-17622', bundleId: 'com.loopmobile' })
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #10] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "am force-stop com.loopmobile"
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #10] 
+Sep 18 20:42:56 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-17622', bundleId: 'com.loopmobile' })
+Sep 18 20:42:56 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeUninstallApp({ deviceId: 'emulator-17622', bundleId: 'com.loopmobile' })
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #11] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "pm list packages com.loopmobile"
+Sep 18 20:42:56 detox[17285] TRACE: [EXEC_SUCCESS, #11] package:com.loopmobile.test
+package:com.loopmobile
+
+Sep 18 20:42:56 detox[17285] DEBUG: [EXEC_CMD, #12] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 uninstall com.loopmobile
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #12] Success
+
+Sep 18 20:42:57 detox[17285] DEBUG: [EXEC_CMD, #13] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "pm list packages com.loopmobile.test"
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #13] package:com.loopmobile.test
+
+Sep 18 20:42:57 detox[17285] DEBUG: [EXEC_CMD, #14] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 uninstall com.loopmobile.test
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #14] Success
+
+Sep 18 20:42:57 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-17622', bundleId: 'com.loopmobile' })
+Sep 18 20:42:57 detox[17285] DEBUG: [EXEC_CMD, #15] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "am force-stop com.loopmobile"
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #15] 
+Sep 18 20:42:57 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-17622', bundleId: 'com.loopmobile' })
+Sep 18 20:42:57 detox[17285] DEBUG: [EXEC_CMD, #16] "/home/x/Android/Sdk/build-tools/33.0.0/aapt" dump xmlstrings "/home/x/Documents/work-projects/USKAPE/loop-mobile/android/app/build/outputs/apk/release/app-release.apk" AndroidManifest.xml
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #16] String pool of 58 unique UTF-16 non-sorted strings, 58 entries and 0 styles using 2864 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: permission
+String #5: exported
+String #6: excludeFromRecents
+String #7: authorities
+String #8: launchMode
+String #9: configChanges
+String #10: value
+String #11: minSdkVersion
+String #12: versionCode
+String #13: versionName
+String #14: windowSoftInputMode
+String #15: targetSdkVersion
+String #16: allowBackup
+String #17: roundIcon
+String #18: visibleToInstantApps
+String #19: compileSdkVersion
+String #20: compileSdkVersionCodename
+String #21: appComponentFactory
+String #22:  android:networkSecurityConfig="@xml/network_security_config"> 
+String #23: 1.0
+String #24: 12
+String #25: action
+String #26: activity
+String #27: android
+String #28: android.intent.action.MAIN
+String #29: android.intent.category.LAUNCHER
+String #30: android.permission.INTERNET
+String #31: androidx.core.app.CoreComponentFactory
+String #32: androidx.emoji2.text.EmojiCompatInitializer
+String #33: androidx.lifecycle.ProcessLifecycleInitializer
+String #34: androidx.startup
+String #35: androidx.startup.InitializationProvider
+String #36: application
+String #37: category
+String #38: com.google.android.gms.auth.api.signin.RevocationBoundService
+String #39: com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+String #40: com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+String #41: com.google.android.gms.common.api.GoogleApiActivity
+String #42: com.google.android.gms.version
+String #43: com.loopmobile
+String #44: com.loopmobile.MainActivity
+String #45: com.loopmobile.MainApplication
+String #46: com.loopmobile.androidx-startup
+String #47: http://schemas.android.com/apk/res/android
+String #48: intent-filter
+String #49: manifest
+String #50: meta-data
+String #51: package
+String #52: platformBuildVersionCode
+String #53: platformBuildVersionName
+String #54: provider
+String #55: service
+String #56: uses-permission
+String #57: uses-sdk
+
+Sep 18 20:42:57 detox[17285] DEBUG: [EXEC_CMD, #17] "/home/x/Android/Sdk/build-tools/33.0.0/aapt" dump xmlstrings "/home/x/Documents/work-projects/USKAPE/loop-mobile/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk" AndroidManifest.xml
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #17] String pool of 40 unique UTF-16 non-sorted strings, 40 entries and 0 styles using 2000 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: exported
+String #4: targetPackage
+String #5: handleProfiling
+String #6: functionalTest
+String #7: minSdkVersion
+String #8: targetSdkVersion
+String #9: compileSdkVersion
+String #10: compileSdkVersionCodename
+String #11: 12
+String #12: Tests for com.loopmobile
+String #13: action
+String #14: activity
+String #15: android
+String #16: android.intent.action.MAIN
+String #17: android.permission.REORDER_TASKS
+String #18: android.test.runner
+String #19: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #20: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #22: androidx.test.orchestrator
+String #23: androidx.test.runner.AndroidJUnitRunner
+String #24: androidx.test.services
+String #25: application
+String #26: com.google.android.apps.common.testing.services
+String #27: com.loopmobile
+String #28: com.loopmobile.test
+String #29: http://schemas.android.com/apk/res/android
+String #30: instrumentation
+String #31: intent-filter
+String #32: manifest
+String #33: package
+String #34: platformBuildVersionCode
+String #35: platformBuildVersionName
+String #36: queries
+String #37: uses-library
+String #38: uses-permission
+String #39: uses-sdk
+
+Sep 18 20:42:57 detox[17285] DEBUG: [EXEC_CMD, #18] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "rm -fr /data/local/tmp/detox"
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #18] 
+Sep 18 20:42:57 detox[17285] DEBUG: [EXEC_CMD, #19] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "mkdir -p /data/local/tmp/detox"
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #19] 
+Sep 18 20:42:57 detox[17285] DEBUG: [EXEC_CMD, #20] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 push "/home/x/Documents/work-projects/USKAPE/loop-mobile/android/app/build/outputs/apk/release/app-release.apk" "/data/local/tmp/detox/Application.apk"
+Sep 18 20:42:57 detox[17285] TRACE: [EXEC_SUCCESS, #20] /home/x/Documents/work-projects/USKAPE/loop-mobile/android/app/build/outputs/apk/release/app-release.apk: 1 file pushed, 0 skipped. 218.0 MB/s (26591951 bytes in 0.116s)
+
+Sep 18 20:42:57 detox[17285] DEBUG: [SPAWN_CMD, #21, cpid=17412] /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell pm install -r -g -t /data/local/tmp/detox/Application.apk
+Sep 18 20:42:58 detox[17285] TRACE: [SPAWN_STDOUT, #21, cpid=17412] Success
+
+Sep 18 20:42:58 detox[17285] DEBUG: [SPAWN_END, #21, cpid=17412] /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell pm install -r -g -t /data/local/tmp/detox/Application.apk exited with code #0
+Sep 18 20:42:58 detox[17285] DEBUG: [EXEC_CMD, #22] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 push "/home/x/Documents/work-projects/USKAPE/loop-mobile/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk" "/data/local/tmp/detox/Test.apk"
+Sep 18 20:42:58 detox[17285] TRACE: [EXEC_SUCCESS, #22] /home/x/Documents/work-projects/USKAPE/loop-mobile/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk: 1 file pushed, 0 skipped. 420.4 MB/s (1838912 bytes in 0.004s)
+
+Sep 18 20:42:58 detox[17285] DEBUG: [SPAWN_CMD, #23, cpid=17416] /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell pm install -r -g -t /data/local/tmp/detox/Test.apk
+Sep 18 20:42:58 detox[17285] TRACE: [SPAWN_STDOUT, #23, cpid=17416] Success
+
+Sep 18 20:42:59 detox[17285] DEBUG: [SPAWN_END, #23, cpid=17416] /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell pm install -r -g -t /data/local/tmp/detox/Test.apk exited with code #0
+Sep 18 20:42:59 ROOT_DESCRIBE_BLOCK[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'ROOT_DESCRIBE_BLOCK' })
+Sep 18 20:42:59 Example[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'Example' })
+Sep 18 20:42:59 detox[17285] INFO:  [97mExample[39m is assigned to [94memulator-17622 (Pixel_XL_API_31)[39m
+Sep 18 20:42:59 detox[17285] INFO:  at e2e/firstTest.e2e.js:7:13 
+ LAUNCHINGLAUNCHINGLAUNCHINGLAUNCHINGLAUNCHINGLAUNCHINGLAUNCHINGLAUNCHINGLAUNCHINGLAUNCHINGLAUNCHING
+Sep 18 20:42:59 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-17622', bundleId: 'com.loopmobile' })
+Sep 18 20:42:59 detox[17285] DEBUG: [EXEC_CMD, #24] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "am force-stop com.loopmobile"
+Sep 18 20:42:59 detox[17285] TRACE: [EXEC_SUCCESS, #24] 
+Sep 18 20:42:59 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-17622', bundleId: 'com.loopmobile' })
+Sep 18 20:42:59 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeLaunchApp({
+  deviceId: 'emulator-17622',
+  bundleId: 'com.loopmobile',
+  launchArgs: {
+    detoxServer: 'ws://localhost:34433',
+    detoxSessionId: '19ce2c9b-1e27-4a93-7d6c-e48325f90d7c'
+  }
+})
+Sep 18 20:42:59 detox[17285] DEBUG: [EXEC_CMD, #25] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "date +\"%m-%d %T.000\""
+Sep 18 20:42:59 detox[17285] TRACE: [EXEC_SUCCESS, #25] 09-18 20:42:51.000
+
+Sep 18 20:42:59 detox[17285] DEBUG: [EXEC_CMD, #26] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 reverse tcp:34433 tcp:34433
+Sep 18 20:42:59 detox[17285] TRACE: [EXEC_SUCCESS, #26] 34433
+
+Sep 18 20:42:59 detox[17285] DEBUG: [EXEC_CMD, #27] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "pm list instrumentation"
+Sep 18 20:42:59 detox[17285] TRACE: [EXEC_SUCCESS, #27] instrumentation:com.loopmobile.test/androidx.test.runner.AndroidJUnitRunner (target=com.loopmobile)
+
+Sep 18 20:42:59 detox[17285] DEBUG: [SPAWN_CMD, #28, cpid=17442] /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell am instrument -w -r -e detoxServer ws://localhost:34433 -e detoxSessionId 19ce2c9b-1e27-4a93-7d6c-e48325f90d7c -e debug false com.loopmobile.test/androidx.test.runner.AndroidJUnitRunner
+Sep 18 20:42:59 detox[17285] TRACE: [SPAWN_STDOUT, #28, cpid=17442] INSTRUMENTATION_STATUS: class=com.loopmobile.DetoxTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+
+Sep 18 20:42:59 detox[17285] TRACE: [SPAWN_STDOUT, #28, cpid=17442] INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.loopmobile.DetoxTest:
+INSTRUMENTATION_STATUS: test=runDetoxTests
+INSTRUMENTATION_STATUS_CODE: 1
+
+Sep 18 20:43:00 detox[17285] DEBUG: [EXEC_CMD, #29] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "ps | grep \"com\.loopmobile$\""
+Sep 18 20:43:00 detox[17285] TRACE: [EXEC_SUCCESS, #29] u0_a199       5097   312 98863280 149364 0                  0 S com.loopmobile
+
+Sep 18 20:43:00 detox[5097] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onLaunchApp({
+  deviceId: 'emulator-17622',
+  bundleId: 'com.loopmobile',
+  launchArgs: {
+    detoxServer: 'ws://localhost:34433',
+    detoxSessionId: '19ce2c9b-1e27-4a93-7d6c-e48325f90d7c'
+  },
+  pid: 5097
+})
+Sep 18 20:43:00 detox[17285] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Sep 18 20:43:00 detox[17285] DEBUG: [SPAWN_CMD, #30, cpid=17461] /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell "logcat -T \"09-18 20:42:51.000\" --pid=5097 -f /sdcard/204256390_0.log"
+Sep 18 20:43:00 detox[17285] DEBUG: [EXEC_CMD, #31] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell du /sdcard/204256390_0.log
+Sep 18 20:43:00 detox[17285] TRACE: [EXEC_SUCCESS, #31] 4	/sdcard/204256390_0.log
+
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onHookFailure({
+  error: 'Exceeded timeout of 120000 ms for a hook.\n' +
+    'Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.',
+  hook: 'beforeAll'
+})
+Sep 18 20:44:59 detox[17285] INFO:  [1m[37mExample: [39m[22m[90mshould have welcome screen[39m
+Sep 18 20:44:59 detox[17285] INFO:  [1m[37mExample: [39m[22m[90mshould have welcome screen[39m[90m [[31mFAIL[90m][39m
+Sep 18 20:44:59 detox[17285] INFO:  [1m[37mExample: [39m[22m[90mshould show hello screen after tap[39m
+Sep 18 20:44:59 detox[17285] INFO:  [1m[37mExample: [39m[22m[90mshould show hello screen after tap[39m[90m [[31mFAIL[90m][39m
+Sep 18 20:44:59 detox[17285] INFO:  [1m[37mExample: [39m[22m[90mshould show world screen after tap[39m
+Sep 18 20:44:59 detox[17285] INFO:  [1m[37mExample: [39m[22m[90mshould show world screen after tap[39m[90m [[31mFAIL[90m][39m
+Sep 18 20:44:59 Example[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'Example' })
+Sep 18 20:44:59 ROOT_DESCRIBE_BLOCK[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'ROOT_DESCRIBE_BLOCK' })
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeCleanup()
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.emu.release.2022-09-18 17-42-54Z/emulator-17622 2022-09-18 17-44-59Z.startup.log
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Sep 18 20:44:59 detox[17285] DEBUG: [EXEC_CMD, #32] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "date +\"%m-%d %T.000\""
+Sep 18 20:44:59 detox[17285] TRACE: [EXEC_SUCCESS, #32] 09-18 20:44:51.000
+
+Sep 18 20:44:59 detox[17461] TRACE: [SPAWN_KILL] sending SIGINT to: /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell logcat -T "09-18 20:42:51.000" --pid=5097 -f /sdcard/204256390_0.log
+Sep 18 20:44:59 detox[17285] DEBUG: [SPAWN_END, #30, cpid=17461] /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell "logcat -T \"09-18 20:42:51.000\" --pid=5097 -f /sdcard/204256390_0.log" terminated with SIGINT
+Sep 18 20:44:59 detox[17285] DEBUG: [EXEC_CMD, #33] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 pull "/sdcard/204256390_0.log" "artifacts/android.emu.release.2022-09-18 17-42-54Z/emulator-17622 2022-09-18 17-44-59Z.startup.log"
+Sep 18 20:44:59 detox[17285] TRACE: [EXEC_SUCCESS, #33] /sdcard/204256390_0.log: 1 file pulled, 0 skipped. 4.7 MB/s (93188 bytes in 0.019s)
+
+Sep 18 20:44:59 detox[17285] DEBUG: [EXEC_CMD, #34] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 shell "rm  \"/sdcard/204256390_0.log\""
+Sep 18 20:44:59 detox[17285] TRACE: [EXEC_SUCCESS, #34] 
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACT_START] starting FileArtifact
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACT_STOP] stopping FileArtifact
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACT_SAVE] saving FileArtifact to: artifacts/android.emu.release.2022-09-18 17-42-54Z/detox_pid_17285.json.log { append: true }
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACT_START] starting FileArtifact
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACT_STOP] stopping FileArtifact
+Sep 18 20:44:59 detox[17285] TRACE: [ARTIFACT_SAVE] saving FileArtifact to: artifacts/android.emu.release.2022-09-18 17-42-54Z/detox_pid_17285.log { append: true }
+Sep 18 20:44:59 detox[17285] DEBUG: [MOVE_FILE] moving "/tmp/5ac01618-9a2a-46e7-b9c2-50385349c04a.detox.log" to artifacts/android.emu.release.2022-09-18 17-42-54Z/detox_pid_17285.json.log
+Sep 18 20:44:59 detox[17285] DEBUG: [MOVE_FILE] moving "/tmp/9d4a3045-0272-46ce-b006-ee6dec88de88.detox.log" to artifacts/android.emu.release.2022-09-18 17-42-54Z/detox_pid_17285.log
+Sep 18 20:44:59 detox[17285] ERROR: [APP_UNREACHABLE] Detox can't seem to connect to the test app(s)!
+
+HINT: 
+
+The test app might have crashed prematurely, or has had trouble setting up the connection.
+Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs 
+
+
+
+Sep 18 20:44:59 detox[17285] TRACE: [SESSION_TORN] tester exited session 19ce2c9b-1e27-4a93-7d6c-e48325f90d7c
+Sep 18 20:44:59 detox[17442] TRACE: [SPAWN_KILL] sending SIGINT to: /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell am instrument -w -r -e detoxServer ws://localhost:34433 -e detoxSessionId 19ce2c9b-1e27-4a93-7d6c-e48325f90d7c -e debug false com.loopmobile.test/androidx.test.runner.AndroidJUnitRunner
+Sep 18 20:44:59 detox[17285] DEBUG: [SPAWN_END, #28, cpid=17442] /home/x/Android/Sdk/platform-tools/adb -s emulator-17622 shell am instrument -w -r -e detoxServer ws://localhost:34433 -e detoxSessionId 19ce2c9b-1e27-4a93-7d6c-e48325f90d7c -e debug false com.loopmobile.test/androidx.test.runner.AndroidJUnitRunner terminated with SIGINT
+Sep 18 20:44:59 detox[17285] DEBUG: [EXEC_CMD, #35] "/home/x/Android/Sdk/platform-tools/adb" -s emulator-17622 reverse --remove tcp:34433
+Sep 18 20:44:59 detox[17285] DEBUG: [WSS_CLOSE] Detox server has been closed gracefully
+Sep 18 20:44:59 detox[17285] TRACE: [EXEC_SUCCESS, #35] 
